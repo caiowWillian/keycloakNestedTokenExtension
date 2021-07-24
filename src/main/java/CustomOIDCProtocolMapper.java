@@ -45,7 +45,6 @@ public class CustomOIDCProtocolMapper extends AbstractOIDCProtocolMapper impleme
 
     public AccessToken transformAccessToken(AccessToken token, ProtocolMapperModel mappingModel, KeycloakSession keycloakSession,
                                             UserSessionModel userSession, ClientSessionContext clientSessionCtx) {
-        System.out.println("===================================");
         token.getOtherClaims().put("njwt", keycloakSession.getContext().getRequestHeaders().getRequestHeader("njwt").get(0));
 
         setClaim(token, mappingModel, userSession, keycloakSession, clientSessionCtx);
