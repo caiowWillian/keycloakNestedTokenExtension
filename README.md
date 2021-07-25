@@ -4,7 +4,6 @@ keycloak plugin to enrich token with another token
 
 ## Sumary
 
-- [keycloakNestedTokenExtension](#keycloaknestedtokenextension)
   - [Sumary](#sumary)
   - [Description](#description)
   - [Decoded token sample](#decoded-token-sample)
