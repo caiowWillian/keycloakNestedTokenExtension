@@ -61,7 +61,7 @@ docker cp keycloak-customProtocolMapper-1.0-SNAPSHOT.jar <container_id>:/opt/jbo
 Add mapper in your client and make a get token
 ```
 curl --location --request POST 'http://localhost:8080/auth/realms/master/protocol/openid-connect/token' \
---header 'njwt: <your nested token` \
+--header 'njwt: <your nested token>` \
 --header 'Content-Type: application/x-www-form-urlencoded' \
 --data-urlencode 'client_id=<your client_id>' \
 --data-urlencode 'client_secret=<your_client_secret' \
